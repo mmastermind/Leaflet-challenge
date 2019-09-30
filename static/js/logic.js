@@ -48,6 +48,21 @@ d3.json(APILink, function(data) {
     }
   }).addTo(myMap);
 
+  // var geojsonMarkerOptions = {
+  //   radius: 20,
+  //   fillColor: "#ff7800",
+  //   color: "#000",
+  //   weight: 1,
+  //   opacity: 1,
+  //   fillOpacity: 0.8
+  // };
+  
+  // L.geoJSON(data, {
+  //   pointToLayer: function (feature, latlng) {
+  //     return L.circleMarker(latlng, geojsonMarkerOptions);
+  //   }
+  // }).addTo(map);
+  
   var heatArray = [];
   for (var i = 0; i < data.features.length; i++) {
     var location = data.features[i];
